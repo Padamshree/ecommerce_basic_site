@@ -1,0 +1,36 @@
+.home {
+    max-width: 1500px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 2rem;
+    font-family: 'Cochin';
+    margin: 1rem 0.5rem;
+    color: #8b01c2;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0.5rem;
+}
+
+@media (max-width: 1240px) {
+   .products {
+      grid-template-columns: repeat(3, auto);
+    }
+} 
+  
+@media (max-width: 960px) {
+    .products {
+      grid-template-columns: repeat(2, auto);
+    }
+}
+  
+@media (max-width: 640px) {
+    .products {
+      grid-template-columns: 1fr;
+    }
+}
